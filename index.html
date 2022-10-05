@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro Pessoal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<form data-Formulario>
+			<fieldset class="border m-4 p-4">
+				<legend class="w-25">Cadastro</legend>
+				<!--Nome Completo-->
+				<div class="form-group row">
+					<label class="col-2 col-form-label" for="nomeCompleto">Nome Completo:</label>
+					<input data-nomeCompleto class="col-10 form-control" type="text" id="nomeCompleto" name="nomeCompleto"
+						placeholder="Digite seu nome aqui..." required />
+				</div>
+				<!--Email-->
+				<div class="form-group row">
+					<label class="col-2 col-form-label" for="email">Email:</label>
+					<div class="input-group col-10 m-0 p-0">
+						<div class="input-group-prepend">
+							<span class="input-group-text">@</span>
+						</div>
+						<input data-Email class="form-control" type="email" id="email" name="email" placeholder="Informe seu email"
+							required />
+					</div>
+				</div>
+
+				<!--cpf-->
+
+				<div class="form-group row">
+					<label class="col-2 col-form-label" for="cpf">CPF:</label>
+					<div class="input-group col-10 m-0 p-0">
+						<div class="input-group-prepend">
+							<span class="input-group-text">11</span>
+						</div>
+						<input data-cpf class="form-control" type="cpf" id="cpf" name="cpf" placeholder="Digite seu CPF" required />
+					</div>
+				</div>
+
+				<!--Senha-->
+				<div class="form-group row">
+					<div class="col-2">
+						<label class="col-form-label" for="senha1">Senha:</label>
+					</div>
+					<div class="col-4 m-0 p-0">
+						<input data-Senha1 class="form-control" type="password" id="senha1" name="senha1" required />
+					</div>
+					<div class="col-2">
+						<label class="col-form-label" for="senha2">Repita Senha:</label>
+					</div>
+					<div class="col-4 m-0 p-0">
+						<input data-Senha2 class="form-control" type="password" id="senha2" name="senha2" required />
+					</div>
+				</div>
+				<div class="form-group row m-0 p-0">
+					<div class="col-2">
+						<label class="col-form-label m-0 p-0">Força Senha:</label>
+					</div>
+					<div class="col-4 p-0 m-0">
+						<meter data-Medidor class="form-control" value="0" min="0" max="10"></meter>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-12 offset-5">
+						<button type="submit" class="btn btn-success">Cadastrar</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+</body>
+<footer>
+</footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!--Nosso arquivo com nossos scripts-->
+<script src="assets/scripts/script.js"></script>
+
+</html>
